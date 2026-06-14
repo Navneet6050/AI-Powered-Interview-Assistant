@@ -1,99 +1,329 @@
-# AI Interview Assistant
+# AI-Powered Interview Assistant
 
-![AI Interview Assistant Screenshot](screenshot.png)
+![Python](https://img.shields.io/badge/Python-3.12+-blue?style=for-the-badge\&logo=python)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini-orange?style=for-the-badge\&logo=google)
+![Speech Recognition](https://img.shields.io/badge/Speech-Recognition-success?style=for-the-badge)
+![Eel](https://img.shields.io/badge/Desktop-App-purple?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 
-I suppose we are all relegated to fighting fire with fire now. This AI Interview Assistant is an standalone python application that uses speech recognition and AI-powered responses intended to help during the interview process. When active, it listens to all system audio for spoken questions, processes them using OpenAI's api, and then provides spoken and written responses. 
-The idea is that you could have this running while on an online interview (zoom etc.)
+> 🎤 A voice-enabled AI interview preparation assistant powered by Google Gemini that listens to interview questions, converts speech to text, and generates intelligent responses in real time.
 
-## Features
+---
 
-- Speech recognition for capturing user questions
-- AI-powered responses using OpenAI's GPT-3.5-turbo model
-- Text-to-speech functionality for spoken answers
-- User-friendly web interface
-- API key management for OpenAI integration
-- Mutable audio responses
-- Responsive design for various screen sizes
+## 📸 Application Preview
 
-## Prerequisites
+![AI-Powered Interview Assistant](./screenshot.png)
 
-Before you begin, ensure you have met the following requirements:
+---
 
-- Python 3.7+
-- An OpenAI API key
+## 🚀 Overview
 
-## Installation
+AI-Powered Interview Assistant is a desktop-based interview preparation application built using Python, Eel, SpeechRecognition, and Google's Gemini AI.
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/ai-interview-assistant.git
-   cd ai-interview-assistant
-   ```
+The application captures interview questions through the microphone, converts speech into text, processes the query using Gemini AI, and displays intelligent responses through an interactive user interface.
 
-2. Install the required Python packages:
-   ```
-   pip3 install eel SpeechRecognition openai
-   ```
+This project demonstrates practical integration of:
 
-3. Set up your OpenAI API key:
-   - Run the application
-   - Use the UI to enter your API key
-   - The key will be saved for future use
+* Speech Recognition
+* Generative AI
+* Frontend-Backend Communication
+* Desktop Application Development
+* API Integration
 
-## Usage
+---
 
-1. Run the main Python script:
-   ```
-   python inter_ass.py
-   ```
+## ✨ Features
 
-2. The application will open in your default web browser.
+### 🎤 Voice-Based Question Input
 
-3. If you haven't already, enter your OpenAI API key when prompted.
+* Real-time speech recognition
+* Automatic question detection
+* Continuous listening mode
 
-4. Click the "Start Listening" button to begin.
+### 🤖 AI-Powered Responses
 
-5. If you sk your question clearly, the application will process your speech and display the question.
+* Powered by Google Gemini AI
+* Instant response generation
+* Context-aware answers
 
-6. The AI will generate a response, which will be displayed in text and spoken aloud.
+### 🖥️ Interactive Desktop Interface
 
-7. Use the mute icon next to each answer to toggle the audio on/off for that specific response.
+* Built using Eel
+* Clean and responsive UI
+* Real-time question and answer display
 
-8. Click the "Stop Listening" button when you're done.
+### 🔐 API Key Management
 
-## Configuration
+* Secure Gemini API integration
+* Local configuration storage
+* Easy API key updates
 
-- You can toggle text-to-speech on/off using the speaker icon next to the "Answers" heading.
-- The "Clear Text" button will remove all questions and answers from the display.
-- To change or remove your API key, use the "Change/Remove API Key" button.
+### ⚡ Performance
 
-## Troubleshooting
+* Lightweight architecture
+* Fast response generation
+* Low system resource usage
 
-- If you encounter issues with speech recognition, ensure your microphone is properly connected and has the necessary permissions.
-- If responses are slow, check your internet connection as the application requires online access for AI processing.
+---
 
-## Contributing
+## 🏗️ Project Architecture
 
-Contributions to the AI Interview Assistant are welcome. Please follow these steps:
+```text
+Microphone Input
+       │
+       ▼
+Speech Recognition
+       │
+       ▼
+Question Detection
+       │
+       ▼
+Google Gemini API
+       │
+       ▼
+Response Generation
+       │
+       ▼
+Desktop User Interface
+```
 
-1. Fork the repository.
-2. Create a new branch: `git checkout -b <branch_name>`.
-3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <project_name>/<location>`
-5. Create the pull request.
+---
 
-Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
+## 🛠️ Tech Stack
 
-## License
+### Backend
 
-This project uses the following license: [Common Development and Distribution License 1.0](https://opensource.org/license/cddl-1-0).
+* Python 3.12+
+* Google Gemini API
+* SpeechRecognition
+* Eel
 
-## Contact
+### Frontend
 
-If you want to contact me, you can reach me at <pixelpump@gmail.com>.
+* HTML5
+* CSS3
+* JavaScript
 
-## Acknowledgements
+### AI Model
 
-- [OpenAI](https://openai.com/) for providing the GPT and text-to-speech APIs
-- [Eel](https://github.com/ChrisKnott/Eel) for the Python/JavaScript integration
-- [SpeechRecognition](https://pypi.org/project/SpeechRecognition/) for the speech recognition functionality
+* Gemini Flash
+
+---
+
+## 📂 Project Structure
+
+```text
+AI-Powered-Interview-Assistant/
+│
+├── web/
+│   ├── index.html
+│   ├── script.js
+│   ├── styles.css
+│   ├── answers.png
+│   └── OpenAI_Logo.png
+│
+├── inter_ass.py
+├── screenshot.png
+├── README.md
+├── .gitignore
+└── config.json (generated locally)
+```
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Navneet6050/AI-Powered-Interview-Assistant.git
+
+cd AI-Powered-Interview-Assistant
+```
+
+---
+
+### 2️⃣ Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+#### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+#### Linux/macOS
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install eel
+pip install SpeechRecognition
+pip install PyAudio
+pip install google-generativeai
+```
+
+Or:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 Get a Gemini API Key
+
+1. Visit Google AI Studio.
+2. Create a Gemini API key.
+3. Copy the generated key.
+4. Launch the application and paste the key into the interface.
+
+---
+
+## ▶️ Running the Application
+
+```bash
+python inter_ass.py
+```
+
+The application will automatically open in your default browser.
+
+---
+
+## 📖 Usage
+
+### Step 1
+
+Launch the application.
+
+### Step 2
+
+Enter your Gemini API key.
+
+### Step 3
+
+Click **Start Listening**.
+
+### Step 4
+
+Ask interview questions through your microphone.
+
+### Step 5
+
+View AI-generated responses instantly.
+
+---
+
+## 💡 Sample Questions
+
+```text
+What is polymorphism in Java?
+
+Explain the difference between process and thread.
+
+What is a deadlock in operating systems?
+
+What are REST APIs?
+
+What is dependency injection?
+
+Explain the SOLID principles.
+
+What is a database index?
+
+What is the difference between TCP and UDP?
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* Speech-to-Text Processing
+* Generative AI Integration
+* API Handling
+* Desktop Application Development
+* Frontend-Backend Communication
+* Event-Driven Programming
+* Python Application Architecture
+* Error Handling and Validation
+
+---
+
+## 🚀 Future Enhancements
+
+* Resume Upload & Analysis
+* ATS Resume Scoring
+* Company-Specific Interview Modes
+* HR Interview Simulation
+* Technical Interview Simulation
+* Behavioral Interview Evaluation
+* Interview Performance Analytics
+* Session History Tracking
+* Multi-Language Support
+* Voice Feedback System
+
+---
+
+## 📌 Key Concepts Used
+
+* Object-Oriented Programming (OOP)
+* Multithreading
+* Speech Recognition
+* REST API Integration
+* Generative AI
+* Desktop UI Development
+* Event Handling
+* File Management
+* JSON Processing
+
+---
+
+## 🔒 Security Notes
+
+* API keys are stored locally.
+* Never commit `config.json` to GitHub.
+* Add the following to `.gitignore`:
+
+```gitignore
+venv/
+__pycache__/
+config.json
+*.pyc
+```
+
+---
+
+## 🤝 Acknowledgements
+
+* Google Gemini API
+* Eel Framework
+* SpeechRecognition Library
+* Python Open Source Community
+
+---
+
+## 👨‍💻 Author
+
+**Navneet Kumar**
+
+B.Tech Computer Science and Engineering
+Lovely Professional University
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and motivates further development.
